@@ -13,9 +13,9 @@ head
   link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css')
 // HEADER
 section.header
-  div
-    +menu
-  
+  nav
+    +menu('images/logo.png')
+    
   .text-box
     h1 World&apos;s Biggest University
     p
@@ -24,6 +24,7 @@ section.header
       br
       | Javascript and you are good to go.
     a.hero-btn(href='') Visit Us To Know More
+
 // ----Course------
 section.course
   h1 Courses We Offer
@@ -50,6 +51,7 @@ section.course
         | Alias et totam ad minima placeat qui accusantium veritatis?
         | Dolorum, sed, numquam animi sunt modi blanditiis
         | rerum voluptatum est recusandae accusantium necessitatibus.
+
 // -----campus------
 section.campus
   h1 Our Global Campus
@@ -67,6 +69,7 @@ section.campus
       img(src='images/washington.png')
       .layer
         h3 WASHINGTON
+
 // ---------- Facilities ----------
 section.facilities
   h1 Our Facilities
@@ -84,6 +87,7 @@ section.facilities
       img(src='images/cafeteria.png')
       h3 Tast and Healthy Food
       p Lorem ipsum dolor sit amet, consectetur adipiscing edit.
+
 // -------- Testimonials ---------
 section.testimonials
   h1 What Our Student Says
@@ -119,6 +123,7 @@ section.testimonials
         i.fa.fa-star
         i.fa.fa-star
         i.fa.fa-star-half-o
+
 // -------- Call To Action ---------
 section.cta
   h1
@@ -126,6 +131,7 @@ section.cta
     br
     | Anywhere From The World
   a.hero-btn(href='') CONTACT US
+
 // -------- Footer ---------
 section.footer
   h4 About Us
@@ -142,6 +148,7 @@ section.footer
   p
     | Made with 
     i.fa.fa-heart-o  by Easy Tutorials
+    
 // JavaScript for Toggle Menu
 script.
   var navLinks = document.getElementById("navLinks")
