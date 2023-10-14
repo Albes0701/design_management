@@ -1,3 +1,5 @@
+include ../mixins/menu.pug
+
 doctype html
 head
   meta(charset='UTF-8')
@@ -11,25 +13,9 @@ head
   link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css')
 // HEADER
 section.header
-  nav
-    a(href='#')
-      img(
-        src='images/logo.png'
-      )
-    #navLinks.nav-links
-      i.fa.fa-window-close(onclick='hideMenu()')
-      ul
-        li
-          a(href='') HOME
-        li
-          a(href='') ABOUT
-        li
-          a(href='') COURSE
-        li
-          a(href='') BLOG
-        li
-          a(href='') CONTACT
-    i.fa.fa-bars(onclick='showMenu()')
+  div
+    +menu
+  
   .text-box
     h1 World&apos;s Biggest University
     p
