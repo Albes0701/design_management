@@ -11,6 +11,8 @@ route(app);
 app.set("views", "./views");
 app.set("views engine", "pug");
 
+app.use(express.static(`${__dirname}/public`));
+
 app.listen(port, () => {
   console.log(`Connect port to ${port}`);
 });
